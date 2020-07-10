@@ -1,0 +1,74 @@
+/* Created by Zaddeen Benaissa, July 2020. */
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: lightcyan;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: lightskyblue;
+}
+
+#skip {
+    background-color: lightpink;
+}
+
+#skip:hover {
+    background-color: salmon;
+}
+
+#shuffle {
+    background-color: rgb(186, 233, 186);
+}
+
+#shuffle:hover {
+    background-color: rgb(104, 204, 104);
+}
+
+
+#array_area {
+    margin: 20px 0;
+    height: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.array_element {
+    width: 3px;
+    margin: 0 1px;
+    background-color: burlywood;
+}
+
+#algorithm_info {
+    margin: 0 20%;
+    margin-bottom: 2%;
+}
+
+#complexity_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px 40px;
+    margin: 0 0;
+}
+
