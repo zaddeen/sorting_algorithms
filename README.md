@@ -1,4 +1,4 @@
-### Project Description
+## Project Description
 I created this project as a way to visualize a few popular sorting algorithms in action. These include:
 
 Merge Sort<br />
