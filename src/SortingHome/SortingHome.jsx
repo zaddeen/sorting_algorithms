@@ -14,7 +14,7 @@ import {animateSelectionSort} from "../SortingAlgorithms/SelectionSort.js";
 const ORIGINAL_ELEMENT_COLOR = "burlywood";
 const CHANGED_ELEMENT_COLOR = "blue";
 const SORTING_SPEED = 3;
-const ELEMENTS_PER_ARRAY = 200;
+const ELEMENTS_PER_ARRAY = 150;
 
 // This allows us to store all the animations in one place - 
 // this is helpful when we are trying to skip past them.
@@ -69,7 +69,8 @@ export default class SortingHome extends React.Component {
         this.disableButtons();
         const algDescription = document.getElementById("algorithm_info");
         algDescription.innerHTML = 
-        `<h2> Algorithm: Quicksort</h2> 
+        `<h2 id="algorithm_title"> Algorithm: Quicksort</h2>
+        <h4> (Scroll down for more info!) </h4>
             <p> Quicksort relies primarily on the idea of the "partition algorithm" - the algorithm
                 selects a pivot element within the array and places it in its correct position
                 in the sorted array. In the process, the algorithm ensures that every element to the
@@ -130,7 +131,8 @@ export default class SortingHome extends React.Component {
         this.disableButtons();
         const algDescription = document.getElementById("algorithm_info");
         algDescription.innerHTML = 
-        `<h2> Algorithm: Merge Sort</h2> 
+        `<h2 id="algorithm_title"> Algorithm: Merge Sort</h2>
+        <h4> (Scroll down for more info!) </h4> 
             <p>Merge Sort works by recursively splitting the array in half until we reach
                 a single element, at which point we begin comparing element by element.
                 This allows each portion of the array to be sorted in a row, which explains
@@ -202,7 +204,8 @@ export default class SortingHome extends React.Component {
         this.disableButtons();
         const algDescription = document.getElementById("algorithm_info");
         algDescription.innerHTML = 
-        `<h2> Algorithm: Insertion Sort</h2> 
+        `<h2 id="algorithm_title"> Algorithm: Insertion Sort </h2>
+        <h4> (Scroll down for more info!) </h4> 
             <p> Insertion Sort is one of the simpler sorting algorithms: it iterates across the full
                 array and sorts it one element at a time, guaranteeing that the first n+1 elements are
                 sorted on the "nth" iteration. Though usually inefficient, its advantages are in the fact
@@ -260,7 +263,8 @@ export default class SortingHome extends React.Component {
         this.disableButtons();
         const algDescription = document.getElementById("algorithm_info");
         algDescription.innerHTML = 
-        `<h2> Algorithm: Bubble Sort</h2> 
+        `<h2 id="algorithm_title"> Algorithm: Bubble Sort</h2>
+        <h4> (Scroll down for more info!) </h4>
             <p> Bubble Sort is the most simple sorting algorithm, usually used more to teach
                 concepts than to effectively sort arrays. It works by comparing each pair of elements,
                 swapping if they are in the wrong order. This guarantees that the final n elements
@@ -307,7 +311,8 @@ export default class SortingHome extends React.Component {
         this.disableButtons();
         const algDescription = document.getElementById("algorithm_info");
         algDescription.innerHTML = 
-        `<h2> Algorithm: Heapsort</h2> 
+        `<h2 id="algorithm_title"> Algorithm: Heapsort</h2>
+        <h4> (Scroll down for more info!) </h4>
             <p> Heapsort sorts by first constructing a Max Heap data structure, and then afterwards
                 makes sure that the Heap invariant is preserved - this invariant being the idea that
                 if one node is a parent of another, the parent value is greater than or equal to
@@ -357,7 +362,8 @@ export default class SortingHome extends React.Component {
         this.disableButtons();
         const algDescription = document.getElementById("algorithm_info");
         algDescription.innerHTML = 
-        `<h2> Algorithm: Selection Sort</h2> 
+        `<h2 id="algorithm_title"> Algorithm: Selection Sort</h2>
+        <h4> (Scroll down for more info!) </h4>
             <p> Selection Sort sorts by dividing the array into two parts: on the "nth"
                 pass through the array, the first n items are sorted, and the remaining
                 subarray (everything to the right of entry n) are not. It works by
@@ -523,8 +529,8 @@ export default class SortingHome extends React.Component {
                 ></div>
               ))}
             </div>
-            <h3> Toggle Array Orientation </h3>
             <div className="stylebuttons">
+              <h3> Toggle Array Orientation </h3>
               <button onClick={() => this.arrayStyle("flex-start")}>
                 Upper (Icicles)
               </button>

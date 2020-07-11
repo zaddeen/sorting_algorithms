@@ -35,7 +35,6 @@ button:hover {
     background-color: rgb(104, 204, 104);
 }
 
-
 #array_area {
     margin: 20px 0;
     height: fixed;
@@ -56,6 +55,10 @@ button:hover {
     margin-bottom: 2%;
 }
 
+#algorithm_info #algorithm_title {
+    margin-bottom: -10px;
+}
+
 #complexity_table {
     display: flex;
     align-items: center;
@@ -71,4 +74,31 @@ td, th {
     padding: 10px 40px;
     margin: 0 0;
 }
+
+/* Smaller Screen Adjustments */
+@media screen and (max-width: 1024px) {
+    .array_element {
+        width: 2px;
+    }
+    .buttons {
+        display: flex; 
+        flex-direction: column; 
+        width: 200px;
+        margin-left:auto; 
+        margin-right:auto;
+        justify-content: center;
+        }
+        button {
+            margin-bottom: 5px;
+        }
+}
+
+@media screen and (max-width: 620px) {
+    .array_element {
+        width: 1px;
+        margin: 0 0.5px;
+
+    }
+}
+
 
