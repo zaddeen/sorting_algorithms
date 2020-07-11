@@ -487,7 +487,7 @@ export default class SortingHome extends React.Component {
     //
 
     // Renders the current state - this includes the sort buttons, array visualization, display toggle,
-    // and algorithm descriptions.
+    // and algorithm descriptions. 
     render() {
         const {array} = this.state;
         return (
