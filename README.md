@@ -10,6 +10,8 @@ Selection Sort
 
 I hope you enjoy! Feel free to look through the source code in src/SortingHome and src/SortingAlgorithms to read my commments about how everything works.
 
+Credit to Clément Mihailescu for the inspiration for this project! His tutorial on Youtube was a great base to build from.
+
 ## Available Scripts
 
 In the project directory, you can run:
